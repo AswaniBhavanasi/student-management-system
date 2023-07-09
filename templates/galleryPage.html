@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% block content  %}
+    <h2 class="text-center"> Gallery Page</h2>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+             <img src="{% static 'images/gal1.jpg' %}" alt="" style="height:80%; width:80%; border:2px green solid">
+        </div>
+        <div class="col-md-4">
+              <img src="{% static 'images/gal2.jpg' %}" style="height:80%; width:80%; border-radius:50%; border:2px red solid">
+          </div>
+          <div class="col-md-4">
+                <img src="{% static 'images/gal3.jpg' %}" style="height:80%; width:80%; border:2px red solid">
+            </div>
+            <div class="col-md-4">
+                  <img src="{% static 'images/gal4.jpg' %}" style="height:80%; width:80%; border-radius:50%; border:2px red solid">
+              </div>
+              <div class="col-md-4">
+                    <img src="{% static 'images/gal5.jpg' %}" style="height:80%; width:80%; border:2px red solid">
+                </div>
+                <div class="col-md-4">
+                      <img src="{% static 'images/gal6.jpg' %}" style="height:80%; width:80%; border-radius:50%; border:2px red solid">
+                  </div>
+
+    </div>
+
+  </div>
+
+  {% endblock %}
+  </body>
+</html>
